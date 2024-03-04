@@ -171,7 +171,7 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(415, music.beat(BeatFraction.Whole))
 })
 input.onButtonPressed(Button.B, function () {
-	
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Funk), music.PlaybackMode.UntilDone)
 })
 basic.forever(function () {
     images.createBigImage(`
