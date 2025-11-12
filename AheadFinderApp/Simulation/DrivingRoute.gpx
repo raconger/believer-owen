@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Xcode">
+    <!--
+    Simulated drive north on Interstate 5 in Seattle
+    This includes course data for heading simulation
+    -->
+    <trk>
+        <name>I-5 North Seattle</name>
+        <trkseg>
+            <!-- Starting point - heading North -->
+            <trkpt lat="47.6062" lon="-122.3321">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:00:00Z</time>
+                <course>0</course><!-- North -->
+                <speed>29</speed><!-- ~65 mph -->
+            </trkpt>
+
+            <trkpt lat="47.6162" lon="-122.3321">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:00:15Z</time>
+                <course>0</course>
+                <speed>29</speed>
+            </trkpt>
+
+            <trkpt lat="47.6262" lon="-122.3321">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:00:30Z</time>
+                <course>0</course>
+                <speed>29</speed>
+            </trkpt>
+
+            <!-- Turn East -->
+            <trkpt lat="47.6362" lon="-122.3221">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:00:45Z</time>
+                <course>90</course><!-- East -->
+                <speed>29</speed>
+            </trkpt>
+
+            <trkpt lat="47.6362" lon="-122.3121">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:01:00Z</time>
+                <course>90</course>
+                <speed>29</speed>
+            </trkpt>
+
+            <!-- Turn South -->
+            <trkpt lat="47.6262" lon="-122.3021">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:01:15Z</time>
+                <course>180</course><!-- South -->
+                <speed>29</speed>
+            </trkpt>
+
+            <trkpt lat="47.6162" lon="-122.3021">
+                <ele>0.0</ele>
+                <time>2024-01-01T12:01:30Z</time>
+                <course>180</course>
+                <speed>29</speed>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

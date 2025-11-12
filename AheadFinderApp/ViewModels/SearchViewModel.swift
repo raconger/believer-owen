@@ -7,7 +7,7 @@ class SearchViewModel: ObservableObject {
     @Published var isSearching = false
     @Published var selectedCategory: String?
 
-    private let locationManager: LocationManager
+    var locationManager: LocationManager
     private let searchService = SearchService()
 
     // Quick search categories
