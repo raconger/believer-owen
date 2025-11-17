@@ -1,74 +1,24 @@
-// Chicken Wing Chicken Wing (Hot Dog and Baloney) Song
-// Triggered by Button A+B pressed together
+// Chicken Wing Song - Simple repetitive melody
+// Viral children's song
+// Button A+B trigger
 input.onButtonPressed(Button.AB, function () {
     music.setVolume(255)
-    music.setTempo(140)
+    music.setTempo(130)
 
-    // "Chicken wing, chicken wing"
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
+    // Simple, repetitive melody in C major
+    for (let index = 0; index < 2; index++) {
+        music.playTone(523, music.beat(BeatFraction.Quarter))     // C5
+        music.playTone(523, music.beat(BeatFraction.Quarter))     // C5
+        music.playTone(523, music.beat(BeatFraction.Quarter))     // C5
+        music.playTone(587, music.beat(BeatFraction.Quarter))     // D5
 
-    // "Hot dog and baloney"
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(698, music.beat(BeatFraction.Quarter))
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Half))
+        music.playTone(659, music.beat(BeatFraction.Quarter))     // E5
+        music.playTone(659, music.beat(BeatFraction.Quarter))     // E5
+        music.playTone(587, music.beat(BeatFraction.Quarter))     // D5
+        music.playTone(523, music.beat(BeatFraction.Quarter))     // C5
 
-    // "Chicken and macaroni"
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Half))
-
-    // "Chillin' with my homies"
-    music.playTone(494, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(494, music.beat(BeatFraction.Half))
-
-    basic.pause(200)
-
-    // Repeat chorus
-    // "Chicken wing, chicken wing"
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-
-    // "Hot dog and baloney"
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(698, music.beat(BeatFraction.Quarter))
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Half))
-
-    // "Chicken and macaroni"
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(659, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Half))
-
-    // "Chillin' with my"
-    music.playTone(494, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(587, music.beat(BeatFraction.Quarter))
-
-    // "HOMIES!"
-    music.playTone(659, music.beat(BeatFraction.Whole))
-    music.playTone(698, music.beat(BeatFraction.Whole))
-    music.playTone(784, music.beat(BeatFraction.Double))
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
 
     basic.pause(500)
 })
